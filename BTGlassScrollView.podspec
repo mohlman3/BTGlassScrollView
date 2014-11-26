@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BTClassScrollView/**/*.{h,m}"
+  s.source_files  = "BTGlassScrollView/**/*.{h,m}"
   s.exclude_files = "BTGlassScrollViewExample", "BTGlassScrollViewExample2"
 
   # s.public_header_files = "Classes/**/*.h"
