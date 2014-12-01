@@ -315,9 +315,9 @@
     //set alpha
     [_blurredBackgroundImageView setAlpha:ratio];
     
-    if ([self.delegate respondsToSelector:@selector(glassScrolLView:didScrollToRatio:)])
+    if ([self.delegate respondsToSelector:@selector(glassScrollView:didScrollToRatio:)])
     {
-        [self.delegate glassScrolLView:self didScrollToRatio:ratio];
+        [self.delegate glassScrollView:self didScrollToRatio:ratio];
     }
 }
 
