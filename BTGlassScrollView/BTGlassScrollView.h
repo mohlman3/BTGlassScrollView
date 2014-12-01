@@ -50,4 +50,6 @@
 - (void)glassScrollView:(BTGlassScrollView *)glassScrollView didChangedToFrame:(CGRect)frame;
 //make custom blur without messing with default settings
 - (UIImage*)glassScrollView:(BTGlassScrollView *)glassScrollView blurForImage:(UIImage *)image;
+//fires when the scroll view has scrolled
+- (void)glassScrolLView:(BTGlassScrollView *)glassScrollView didScrollToRatio:(CGFloat)ratio;
 @end

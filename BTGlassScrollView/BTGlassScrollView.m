@@ -314,6 +314,11 @@
     
     //set alpha
     [_blurredBackgroundImageView setAlpha:ratio];
+    
+    if ([self.delegate respondsToSelector:@selector(glassScrolLView:didScrollToRatio:)])
+    {
+        [self.delegate glassScrolLView:self didScrollToRatio:ratio];
+    }
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
